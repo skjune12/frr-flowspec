@@ -1,0 +1,32 @@
+[global.config]
+as = 65003
+router-id = "192.168.0.3"
+local-address-list = ["192.168.0.3"]
+
+# rt1
+[[neighbors]]
+[neighbors.config]
+neighbor-address = "192.168.13.1"
+peer-as = 65001
+
+[[neighbors.afi-safis]]
+[neighbors.afi-safis.config]
+afi-safi-name = "ipv4-unicast"
+
+[[neighbors.afi-safis]]
+[neighbors.afi-safis.config]
+afi-safi-name  = "ipv4-flowspec"
+
+# rt2
+[[neighbors]]
+[neighbors.config]
+neighbor-address = "192.168.23.1"
+peer-as = 65002
+
+[[neighbors.afi-safis]]
+[neighbors.afi-safis.config]
+afi-safi-name = "ipv4-unicast"
+
+[[neighbors.afi-safis]]
+[neighbors.afi-safis.config]
+afi-safi-name  = "ipv4-flowspec"
