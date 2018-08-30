@@ -17,4 +17,4 @@
 
 ## Result
 
-As of 30th, August, 2018, the flowspec rule is correctly inserted to FRR, but it is not validated. It may be the bug of FRR.
+* As of 30th, August, 2018, the flowspec rule is correctly inserted to FRR, but it is not validated. It may be the bug of FRR.
